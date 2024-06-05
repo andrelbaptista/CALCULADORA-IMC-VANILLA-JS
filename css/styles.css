@@ -34,8 +34,8 @@ body {
 }
 
 #main-container {
-  min-width: 400px;
-  min-height: 400px;
+  min-width: 450px;
+  min-height: 450px;
   background-color: var(--cor3);
   padding: 2rem;
 }
@@ -162,4 +162,27 @@ button:hover {
 
 .high {
   color: var(--cor10);
+}
+
+/* celular médio */
+@media (max-width: 375px) {
+  #main-container {
+    min-width: 400px;
+    min-height: 400px;
+  }
+}
+/* celular pequeno */
+@media (max-width: 320px) {
+  #main-container {
+    min-width: 300px;
+    min-height: 300px;
+  }
+  .line-header h4:nth-child(3),
+  .line-data p:nth-child(3) {
+    max-width: 40px;
+  }
+  #result-container{
+    min-width: 250px;
+    min-height: 250px;
+  }
 }
